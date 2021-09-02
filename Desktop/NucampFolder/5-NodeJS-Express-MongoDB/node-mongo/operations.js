@@ -1,5 +1,8 @@
 const assert = require('assert').strict;
 
+// creating the insert, find, remove, and update documents. They had similar skeletons so I could copy it
+//I am confused about the callbacks section lolz.
+
 exports.insertDocument = (db, document, collection, callback) => {
     const coll = db.collection(collection);
     coll.insertOne(document, (err, result) => {
